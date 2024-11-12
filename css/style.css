@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.owl-nav{
+    display: flex !important ;
+    justify-content: center;
+}
+.completed{
+    background-color: rgba(0, 255, 0,0.1);
+}
+button{
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+#addbtn{
+    background-color: #0A74DA;
+
+}
+.delete-btn{
+    background-color:#FF4C4C ;
+    color: white;
+}
+.owl-stage-outer{
+    text-align: center;
+}
+.card h5{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type='checkbox']{
+ width: 1.5rem;
+ height: 1.5rem;
+ align-self: center;
+ margin-bottom: 1%;
+}
+
+/* add animation */
+
+/* .task-card {
+    opacity: 1;
+    transform: translateY(-20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.task-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.5s ease
+}
+
+.task-card.removing {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+} */
