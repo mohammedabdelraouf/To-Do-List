@@ -12,6 +12,7 @@ if (Tasks != null) {
 function addTask(name, tasksArr) {
   var task = {
     name: name,
+    completed: false
   };
   tasksArr.push(task);
   localStorage.setItem("Tasks", JSON.stringify(tasksArr));
@@ -89,12 +90,18 @@ function showTask(element, i) {
 
   taskToggle.addEventListener("change", () => {
     taskToggle.parentElement.classList.toggle("completed");
+    element.completed = true ;
   });
 
   // append elements in parent
   newCard.appendChild(cardHeader);
   newCard.appendChild(removeBtn);
   newCard.appendChild(taskToggle);
+  if(element.completed == true)
+  {
+    newCard.classList.add('completed')
+    taskToggle.checked = true
+  }
   tasksContainer.appendChild(newCard);
 }
 
@@ -137,11 +144,16 @@ function showLastTask(element, i) {
   newCard.appendChild(removeBtn);
   newCard.appendChild(taskToggle);
   newCard.classList.add("new-element");
+  if(element.completed == true)
+    {
+      newCard.classList.add('completed')
+      taskToggle.checked = true
+    }
   tasksContainer.appendChild(newCard);
   setTimeout(() => {
     newCard.classList.add("adding");
     newCard.classList.remove("new-element");
-  }, 200);
+  }, 100);
 
   setTimeout(() => {
     newCard.classList.remove("adding");

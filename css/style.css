@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.header-icon{
+    width: 8rem !important;
+    height: 5rem !important;
+}
 
 .owl-nav {
     display: flex !important;
