@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskify</title>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="">
-    <h1 class="text-center  w-25  m-auto  text-dark py-2">Taskify</h1>
 
-    <form class="form-control w-75 m-auto mt-5 pb-5 text-center" >
+<body class="overflow-x-hidden">
+
+    <header class="py-2 bg-primary">
+        <div class="container">
+            <h1 class=" text-start m-auto  text-white ">Taskify</h1>
+        </div>
+    </header>
+
+    <form class="form-control w-75 m-auto mt-5 pb-5 text-center">
         <div class="row col-8 m-auto justify-content-around align-items-center">
-            <input class="col-12 col-md-6  rounded py-2 border border-secondary " type="text" id="firstName" placeholder="Add new task">
-            <button id="addbtn" class="btn btn-primary  col-6 col-md-3 col-lg-2 my-3 " > add Task</button>
-        </div> 
+            <input class="col-12 col-md-6  rounded py-2 border border-secondary " type="text" id="firstName"
+                placeholder="Add new task">
+            <button id="addbtn" class="btn btn-primary  col-6 col-md-3 col-lg-2 my-3 "> add Task</button>
+        </div>
     </form>
-    <main class="container rounded shadow-lg bg-white pt-3 mt-5 pb-1">
-    <h2 class="text-center  w-25  m-auto mb-3">my tasks</h2>
-    <div id="div-container" class=" mb-5 col-10 mt-5 m-auto pb-5 row">
-        <div class="row justify-content-center my-5">
-            <div class="col-3 col-md-2 col-lg-1">
-                <div class="row">
-                    <div class="col-5">
-                        <button class="btn rounded-start-pill bg-primary text-white text-center fs-14">
-                            <i class="fa-solid fa-left-long"></i>
-                        </button>
-                    </div>
-                    <div class="col-5">
-                        <button class="btn rounded-end-pill bg-primary text-white text-center fs-14">
-                            <i class="fa-solid fa-right-long"></i>
-                        </button>
+    <main class="container w-50 rounded shadow-lg bg-white pt-3 mt-5 pb-1">
+        <h2 class="text-center  w-75 w-md-25  m-auto mb-3">my tasks</h2>
+        <div id="div-container" class=" mb-5 col-10 mt-5 m-auto pb-5 row">
+            <div class="row justify-content-center my-5">
+                <div class="col-3 col-md-2 col-lg-1">
+                    <div class="row">
+                        <div class="col-5">
+                            <button class="btn rounded-start-pill bg-primary text-white text-center fs-14">
+                                <i class="fa-solid fa-left-long"></i>
+                            </button>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn rounded-end-pill bg-primary text-white text-center fs-14">
+                                <i class="fa-solid fa-right-long"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>   
-    </div>
-</main>
-   <script src="js/bootstrap.bundle.js"></script>
+        </div>
+    </main>
+
+    <footer class="bg-primary py-4 position-absoulte top-100 mt-5">
+        <h5 class="text-center">&copy; Taskify </h5>
+        <!-- <h5 class="text-center">&reg; Mohammed Abdelraouf </h5> -->
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
 
 </body>
+
 </html>

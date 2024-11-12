@@ -1,57 +1,63 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.owl-nav{
-    display: flex !important ;
+
+
+.owl-nav {
+    display: flex !important;
     justify-content: center;
 }
-.completed{
-    background-color: rgba(0, 255, 0,0.1);
+
+.completed {
+    background-color: rgba(0, 255, 0, 0.1);
 }
-button{
+
+button {
     font-size: 14px !important;
     font-weight: bold !important;
 }
-#addbtn{
+
+#addbtn {
     background-color: #0A74DA;
 
 }
-.delete-btn{
-    background-color:#FF4C4C ;
+
+.delete-btn {
+    background-color: #FF4C4C;
     color: white;
 }
-.owl-stage-outer{
+
+.owl-stage-outer {
     text-align: center;
 }
-.card h5{
+
+.card h5 {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-input[type='checkbox']{
- width: 1.5rem;
- height: 1.5rem;
- align-self: center;
- margin-bottom: 1%;
+
+input[type='checkbox'] {
+    width: 1.5rem;
+    height: 1.5rem;
+    align-self: center;
+    margin-bottom: 1%;
 }
 
-/* add animation */
+/* adding and removing transformation*/
 
-/* .task-card {
-    opacity: 1;
-    transform: translateY(-20px); 
-    transition: opacity 0.3s ease, transform 0.3s ease; 
+.new-element {
+    transform: translateX(2000px);
 }
 
-.task-card.show {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.3s ease, transform 0.5s ease
+
+.removing {
+    transform: translateX(1000px);
+    transition-duration: 0.5s;
 }
 
-.task-card.removing {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 2s ease, transform 2s ease;
-} */
+.adding {
+    transform: translateX(0px) !important;
+    transition-duration: 1s !important;
+}
